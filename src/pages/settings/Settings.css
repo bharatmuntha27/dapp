@@ -1,0 +1,98 @@
+.settings-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  padding: 40px;
+  color: white;
+}
+
+.settings-header {
+  margin-bottom: 35px;
+}
+
+.settings-header h1 {
+  font-size: 36px;
+}
+
+.settings-header p {
+  color: #cbd5e1;
+  margin-top: 8px;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.settings-card {
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.settings-card h2 {
+  margin-bottom: 22px;
+}
+
+.settings-card label {
+  display: block;
+  color: #93c5fd;
+  font-weight: 700;
+  margin: 18px 0 8px;
+}
+
+.settings-card input[type="text"],
+.settings-card input:not([type]) {
+  width: 100%;
+}
+
+.settings-card input {
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.settings-card button {
+  margin-top: 24px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #3b82f6;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.danger-card {
+  grid-column: span 2;
+}
+
+.danger-card p {
+  color: #cbd5e1;
+}
+
+.danger-btn {
+  background: #ef4444 !important;
+}
+
+@media (max-width: 768px) {
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .danger-card {
+    grid-column: span 1;
+  }
+}

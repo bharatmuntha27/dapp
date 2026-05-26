@@ -1,0 +1,82 @@
+.transactions-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  padding: 40px;
+  color: white;
+}
+
+.transactions-header {
+  margin-bottom: 35px;
+}
+
+.transactions-header h1 {
+  font-size: 36px;
+}
+
+.transactions-header p {
+  color: #cbd5e1;
+  margin-top: 8px;
+}
+
+.transactions-table {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.table-head,
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 25px;
+  align-items: center;
+}
+
+.table-head {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+}
+
+.table-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.success {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.pending {
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .table-head,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.hero-section button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #60a5fa;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.feature-card button {
+  margin-top: 22px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #60a5fa;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
+}
